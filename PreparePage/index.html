@@ -13,6 +13,8 @@
 
 	<link rel="stylesheet" href="skandiabanken.css">
 
+	<script type="text/javascript" src="skandiabanken.js"></script>
+
 	<title>Skandiabanken</title>
 
 </head>
@@ -70,12 +72,11 @@
 		</div>
 
 		<section id="navbar">
-			<br/>
-			<p><a href="Arbeidsgiver_LoggInn.html"> Logg Inn </a></p>
-			<p>  |  </p> 
-			<p><a href="Arbeidsgiver_Evalueringer.html"> Evalueringer </a></p> 
-			<p>  |  </p> 
-			<p><a href="Arbeidsgiver_Registrering.html"> Registrer Jobb</a></p>
+			<p><a href="Arbeidsgiver_LoggInn.html"> First Page </a></p>
+			<!-- <p>  |  </p> -->
+			<p><a id="middleMenuItem" href="Arbeidsgiver_Evalueringer.html"> Second Page </a></p> 
+			<!-- <p>  |  </p> -->
+			<p><a href="Arbeidsgiver_Registrering.html"> Third Page </a></p>
 
 		</section>
 
@@ -84,14 +85,20 @@
 
 	<main class = "Site-Content">
 
+	<!-- Søkebar på hovedsiden -->
+			<form>
+				<input id="search" type="text" name="Søk" value="" onclick="getRow()">
+				<input id="searchbutton" type="button" onclick="getRow()" value="Søk">
+			</form>
+
+		<!-- <button type="button" onclick="getRow()">Add row</button> -->
+
+		</br> </br>
+
 
 		<table id="main_data_table">
 			<!-- <caption><h3></h3></caption> -->
-			<tr><th>Jobb</th><th>Stilling</th><th>Karakter</th></tr>
-			<tr><td>Google</td><td>Systemutvikler</td><td>10.0</td></tr>
-			<tr><td>Kluge</td><td>Advokat</td><td>8,9</td></tr>
-			<tr><td>Meny</td><td>Medarbeider</td><td>6,8</td></tr>
-			<tr><td>BI</td><td>Rådgiver</td><td>4,3</td></tr>
+			<tr><th>Tall</th><th>Annet tall</th></tr>
 
 		</table>
 
