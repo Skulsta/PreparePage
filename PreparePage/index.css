@@ -8,3 +8,34 @@ body {
 h2 {
 	
 }
+
+.Site {
+	display: flex;
+	min-height: 100vh;
+  	flex-direction: column;
+}
+
+.Site-content {
+	flex: 1;
+}
+
+
+footer {
+	background-color: #f1f1f1;
+	width: 100%;
+	color: black;
+	border-top: 5px;
+	border-color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: darkgreen;
+}
