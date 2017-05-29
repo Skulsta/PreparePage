@@ -13,8 +13,6 @@
 
 	<link rel="stylesheet" href="skandiabanken.css">
 
-	<script type="text/javascript" src="skandiabanken.js"></script>
-
 	<title>Skandiabanken</title>
 
 </head>
@@ -72,11 +70,11 @@
 		</div>
 
 		<section id="navbar">
-			<p><a href="Arbeidsgiver_LoggInn.html"> First Page </a></p>
+			<p><a href="#"> First Page </a></p>
 			<!-- <p>  |  </p> -->
-			<p><a id="middleMenuItem" href="Arbeidsgiver_Evalueringer.html"> Second Page </a></p> 
+			<p><a id="middleMenuItem" href="#"> Second Page </a></p> 
 			<!-- <p>  |  </p> -->
-			<p><a href="Arbeidsgiver_Registrering.html"> Third Page </a></p>
+			<p><a href="#"> Third Page </a></p>
 
 		</section>
 
@@ -86,9 +84,9 @@
 	<main class = "Site-Content">
 
 	<!-- Søkebar på hovedsiden -->
-			<form>
-				<input id="search" type="text" name="Søk" value="" onclick="getRow()">
-				<input id="searchbutton" type="button" onclick="getRow()" value="Søk">
+			<form action="#" name="main_form">
+				<input id="search" type="text" name="search">
+				<input id="searchbutton" type="submit" name="submit" value="Lagre">
 			</form>
 
 		<!-- <button type="button" onclick="getRow()">Add row</button> -->
@@ -98,7 +96,7 @@
 
 		<table id="main_data_table">
 			<!-- <caption><h3></h3></caption> -->
-			<tr><th>Tall</th><th>Annet tall</th></tr>
+			<tr><th>Input</th><th>Lengde</th></tr>
 
 		</table>
 
@@ -109,6 +107,6 @@
 		<hr>
 		<center> <!-- Skandiabanken | <a class = "footer_text" href="stian@skandiabanken.no"> Send mail --> Something clever </a> </center>
 	</footer>
-
+	<script src="skandiabanken.js"></script>
 </body>
 </html>
